@@ -7,7 +7,10 @@ De Tapo P115 smart plug werkt met home assistant en een extern script.
 - Verbind met de tmp-wifi van de plug.
 - Installeer in een virtualenv en draai `uv run kasa discover`
 - `uv run kasa --host $IP wifi scan`, waarschijnlijk is het IP `192.168.0.1`
-- `uv run kasa --host $IP wifi join $netwerk` en vul wifi-type en wachtwoord in
+- `uv run kasa --host $IP wifi join $netwerk` en vul wifi-type en wachtwoord in (wifi-type staat in de data uit vorige stap)
+
+[!NOTE]
+Het joinen van een netwerk kan een foutmelding geven, dit lijkt echter geen probleem.
 
 ## Home Assistant
 [Integration manual](https://www.home-assistant.io/integrations/tplink)
